@@ -1,5 +1,4 @@
-from flask import Flask, request, jsonify
-import streamlit as st
+from streamlit as st
 import requests
 import sqlite3
 
