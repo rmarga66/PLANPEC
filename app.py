@@ -3,9 +3,7 @@ import pandas as pd
 import requests
 import sqlite3
 
-app = streamlit
-# Base de données SQLite
-DATABASE = 'patients.db'
+
 
 def init_db():
     """Initialisation de la base de données"""
