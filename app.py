@@ -1,4 +1,4 @@
-from streamlit as st
+from streamlit 
 import requests
 import sqlite3
 
