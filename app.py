@@ -3,8 +3,7 @@ import pandas as pd
 import requests
 import sqlite3
 
-app = Flask(__name__)
-
+app = streamlit
 # Base de données SQLite
 DATABASE = 'patients.db'
 
