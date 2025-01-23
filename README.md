@@ -11,3 +11,24 @@
 ## Installation
 
 1. Clonez le projet :
+
+2. Créez un environnement virtuel et activez-le :
+
+3. Installez les dépendances :
+
+4. Lancez l'application :
+
+L'application est accessible à `http://127.0.0.1:5000`.
+
+## Endpoints
+
+- **Ajouter un patient** : `POST /add_patient`
+- Données requises : `{ "name": "John Doe", "address": "10 rue de Rivoli, Paris" }`
+
+- **Lister les patients** : `GET /list_patients`
+
+- **Marquer un patient visité** : `POST /mark_visited/<id>`
+
+## Dépendances
+- Flask
+- Requests
