@@ -1,10 +1,17 @@
-import streamlit as st
-import pandas as pd
+from flask import Flask, request, jsonify
 import requests
+import sqlite3
 
+app = Flask(__name__)
+
+# Base de données SQLite
+DATABASE = 'patients.db'
 
 def init_db():
     """Initialisation de la base de données"""
+    conn = sqlite3.connect(DATABASE)
+    cursor = conn.cursor()
+    cursor.execute('''
         CREATE TABLE IF NOT EXISTS patients (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT NOT NULL,
